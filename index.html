@@ -11,18 +11,20 @@
 
     * {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: whitesmoke;
     }
 
     .siyl {
         text-align: center;
         font-size: 70px;
-        color:chartreuse;
+        color:rgb(255, 0, 64);
         position: relative;     
         width: 800px;   
         margin-top: 0px;
-        border: 3px solid chartreuse;
+        border: 3px solid purple;
         border-radius: 25px;
         display: inline-block;
+        
         
     }
     
@@ -31,17 +33,18 @@
         font-size: 60px;
     }
 
-    .guy {
+    #guy {
         height: 600px;
-
+        max-height: 600px;
     }
 
-    .guy:hover {
-        opacity: 0.8;
+    #guy:hover {
+        opacity: 0.9;
     }
 
     .denny {
         margin-top: 60px;
+        font-family: cursive;
     }
 
     h1 {
@@ -55,16 +58,16 @@
     }
 
     .pre {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     table {
-        border: 3px solid black;
+        border: 3px solid whitesmoke;
     }
 
     body {
         background-color: rgb(255, 106, 80);
-        background
+        background-image: url(https://media.istockphoto.com/id/1415835098/photo/blue-abstract-background-with-space-for-design-transition-from-light-to-dark-gradient-elegant.jpg?b=1&s=170667a&w=0&k=20&c=OfK8SADMV0KH6nC53lxMF2YaU_Nw54SnvZnbCDe-Fps=);
     }
 
     article {
@@ -77,6 +80,34 @@
         text-align: center;
     }
 
+    .tbird {
+        color:blueviolet; 
+        font-size: 18px;
+
+    }
+    
+    .button1 {
+        background-color: black;
+        height: 45px;
+        width: 240px;
+        border: 1px solid white;
+        border-radius: 15px;
+        font-size: 30px;
+        color: white;
+        display: inline;
+
+    }
+
+    .button2 {
+        background-color: black;
+        height: 45px;
+        width: 240px;
+        border: 1px solid white;
+        border-radius: 15px;
+        font-size: 30px;
+        color: white;
+        display: inline;
+    }
 
 </style>
 
@@ -89,25 +120,26 @@
 
   <h1 class="siyl">Stay In Your Lane</h1>
     <nav>
-        <button href="guy">Inspiration</button>
+        <button type="button" class="button1" ><a href=#guy>Inspiration</a></button>
+        <button type="button" class="button2" ><a href=#stats>Statistics</a></button>
+        
     </nav>
     <div>
         <p class="pre">2022 Pre-Summer Monday Night League <strong>Champions</strong></p>
-        <p style="color:blueviolet"><strong>Thunderbird Lanes</strong>
+        <p class="tbird"><a target="_blank" href="https://www.tbirdphilly.com/"><strong>Thunderbird Lanes</strong></a>
         </p>
     </div>
  <figure></figure>   
  <embed class="boys" src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/273610499_5195528673793279_4424313260503763988_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=PfKAV7iGkiMAX8S0HS_&_nc_ht=scontent-lga3-2.xx&oh=00_AfCmX0nZ55ifJ9IgubYrznxulyQ5hd9kBB2-TJgKu5qFIQ&oe=63BEE521" />
     <figcaption class="cap">Tom, Jay, Bill, Nick</figcaption>
 </figure>
-    <table>
+    <table id="stats">
         <tbody>
             <th>
                 <tr>Team Stats</tr>
             </th>
             <tr>
-                <td>Tom
-                </td>
+                <td>Tom</td>
             </tr>
             <tr>
                 <td>Jay
@@ -122,10 +154,13 @@
                 </td>
             </tr>
         </tbody>
+
+
+
     </table>
 
     <div>
-        <p class="denny">We <em>Came</em>, We saw, We conquered. -<em>Denny</em> 
+        <p class="denny">We came, We saw, We conquered. -<em>Denny</em> 
         of House Tbird 
         </p>
             <embed src="https://media.tenor.com/kcpKqzMdJu4AAAAd/bowling-ball-
@@ -133,7 +168,7 @@
     </div>
         <h3>Our Inspiration</h3>
     <div>
-        <embed class="guy" src="https://ashbowl.com/wp-content/uploads/2017/12/dreamstimelarge_12169338-1.jpg"/>
+        <embed id="guy" src="https://ashbowl.com/wp-content/uploads/2017/12/dreamstimelarge_12169338-1.jpg"/>
     </div>
         <section>
             <article>
