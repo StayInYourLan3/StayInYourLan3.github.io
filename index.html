@@ -1,419 +1,138 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modded PS Vita User Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-<style>
-    .boys {
-        height: 700px;
-        margin: auto 0;
-        padding: auto; 
-    }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    #stats {
-        margin-top: 30px;
-        font-size: 30px;
-        padding: 40px 40px;
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-    
-    }
+header h1 {
+  margin: 0;
+}
 
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
 
-    * {
-    
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
 
-        box-sizing: border-box;
-        
-    }
+/* Main content styles */
+main {
+  padding: 20px;
+}
 
-    .tbird {
-        color:blueviolet; 
-        font-size: 18px;
+section {
+  margin-bottom: 40px;
+}
 
-    }
+section h2 {
+  margin-top: 0;
+}
 
-    .siyl {
-        text-align: center;
-        font-size: 70px;
-        color:rgb(5, 41, 152);
-        position: relative;     
-        width: 800px;   
-        margin-top: 0px;
-        border: 10px solid rgb(16, 12, 64);
-        border-radius: 25px;
-        display: inline-block;
-        background-color: rgba(76, 211, 226, 0.5);
-        font-family:Georgia, 'Times New Roman', Times, serif        
-    }
-
-    #catan {
-        width: 500px;
-        margin-top: 25px;
-    }
-
-    #guy {
-        height: 600px;
-        max-height: 600px;
-    }
-
-    #guy:hover {
-        opacity: 0.9;
-    }
-
-    .denny {
-        margin-top: 60px;
-        font-family: cursive;
-        font-size: 30px;
-        text-align: justify;
-    }
-
-    #lanes {
-        margin-bottom: 30px;
-    }
-
-    .cap {
-        font-size: 24px;
-        margin-bottom: 60px;
-    }
-
-    .pre {
-        font-size: 30px;
-    }
-
-    table {
-        border: 3px solid whitesmoke;
-        background-color: goldenrod;
-
-    }
-
-    body {
-        background-color: #2DA8E0;
-        position: active;
-    }
-
-    article {
-        border: 3px solid black;
-        background-color: rgb(200 100, 80) ;
-        width: 890px;
-        position: center;
-    }
-
-    section {
-        text-align: center;
-        display: flex;
-        margin-bottom: 30px;
-    }
-
-    ul {
-        font-size: 40px;
-    }
-    
-    .button1 {
-        background-color: rgb(101, 49, 233);
-        height: 45px;
-        width: 120x;
-        border: 1px solid white;
-        border-radius: 15px;
-        font-size: 25px;
-        color: white;
-        display: inline;
-        text-decoration: none;
-    }
-
-    .button1:hover {
-        background-color: crimson;
-        cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0, 71, 212, 0.4)
-
-    }
-
-    .button1:active {
-        background-color: blue;
-    }
-
-    .button2 {
-        background-color: rgb(17, 166, 94);
-        height: 45px;
-        width: 150px;
-        border: 1px solid white;
-        border-radius: 15px;
-        font-size: 25px;
-        color: white;
-        display: inline;
-    }
-
-    .button2:hover {
-        background-color: crimson;
-        cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0, 71, 212, 0.4)
-    }
-
-    .button2:active {
-        background-color: blue;
-    }
-    
-    .button6 {
-        background-color: rgb(2, 164, 251);
-        height: 45px;
-        width: 100px;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 15px;
-        font-size: 25px;
-        color: black;
-        display: inline;
-
-    }
-
-    .button6:hover {
-        cursor: pointer;
-        background-color: black;
-        border: 1px solid black;
-        box-shadow: 0px 10px 10px rgba(0, 71, 212, 0.4)
-
-    }
-
-    .button3 {
-        background-color: rgb(186, 179, 179);
-        height: 45px;
-        width: 280px;
-        border: 3px solid rgb(255, 255, 255);
-        border-radius: 15px;
-        font-size: 25px;
-        color: black;
-        display: inline;
-    }
-
-    .button3:hover {
-        background-color: rgb(202, 20, 20);
-        cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0, 71, 212, 0.4);
-    }
-
-    .button3:active {
-        background-color: blue;
-    }
-    
-    #button4 {
-        background-color: rgb(17, 166, 94);
-        height: 100px;
-        width: 100px;
-        border: 2px solid rgb(253, 252, 252);
-        border-radius: 50px;
-        font-size: 25px;
-        color: rgb(212, 2, 2);
-        margin-left: 330px;
-    }
-
-    .button5 {
-        background-color: rgb(246, 1, 1);
-        height: 45px;
-        width: 210px;
-        border: 1px solid white;
-        border-radius: 15px;
-        font-size: 25px;
-        color: white;
-        display: inline;
-    }
-
-    .button5:hover {
-        background-color: crimson;
-        cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0, 71, 212, 0.4)
-
-    }
-
-    .button5:active {
-        background-color: blue;
-    }
-
-    .dnice {
-        background-color: #2382AD;
-    }
-    h1 {
-        background-color: rgb(250, 250, 250);
-        text-align: center;
-    }
-
-    h3 {
-        margin-top: 60px;
-        font-size: 60px;
-        text-align: center;
-        border: 2px solid white;
-        background-color: rgb(101, 49, 233);
-        border-radius: 30px;
-    }
-
-    h4 {
-        font-size: 50px;
-        border: 2px solid whitesmoke;
-        background-color: rgb(139, 136, 136);
-        border-radius: 50px;
-        text-align: center;
-        color: aliceblue;
-    }
-
-    #grid {
-        font-size: 50px;
-        border: 2px solid black;
-        color:rgb(241, 229, 229);
-        margin: 10px 10px;
-        text-align: center;
-        background-color: rgb(0, 0, 0);
-        max-width: 300px;
-        display:contents;
-
-    }
-
-    h6 {
-        font-size: 50px;
-        border: 2px solid rgb(248, 243, 243);
-        background-color: rgb(208, 12, 12);
-        border-radius: 50px;
-        text-align: center;  
-        padding: 20px 20px;
-        margin-bottom: 30px;
-        margin-top: 80px;
-    }
-
-    h5 {
-        background-color: rgb(17, 166, 94);
-        border: 2px solid white;
-        border-radius: 40px;
-        max-width: 300px;
-    }
-
-
-    ul {
-        border: 3px solid black;
-        background-color: indianred;
-    }
-
-    .champs {
-        background-color: #7DD2FA;
-        margin: auto;
-        
-    }
-
-</style>
-
-<!-- Home Button is button6-->
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+  </style>
+</head>
 
 <body>
-    <head>
-        <title>Stay In Your Lane</title>
-    </head>
+  <header>
+    <h1>Modded PS Vita User Guide</h1>
+  </header>
 
+  <nav>
+    <ul>
+      <li><a href="#downloading-games">Downloading Games</a></li>
+      <li><a href="#emulators">Emulators</a></li>
+      <li><a href="#vitadb-downloader">VitaDB Downloader</a></li>
+      <li><a href="#vitashell">VitaShell</a></li>
+    </ul>
+  </nav>
 
-  <h1 class="siyl">Stay In Your Lane</h1>
-    <nav id="home">
-        <button type="button" class="button1" ><a href=#smile>Inspiration</a></button>
-        <button type="button" class="button2" ><a href=#stats>Statistics</a></button>
-        <button type="button" class="button5" ><a href=#lanes>Off The Lanes</a></button>
-        <button type="button" class="button3" ><a href=#honor>Honorary Mention</a></button>
-    </nav>
-    <div class="champs">
-        <p class="pre">2022 Pre-Summer Monday Night League <strong>Champions</strong></p>
-        <p class="tbird"><a target="_blank" href="https://www.tbirdphilly.com/"><strong>Thunderbird Lanes</strong></a>
-        </p>
-    </div>
- <figure></figure>   
- <embed class="boys" src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/273610499_5195528673793279_4424313260503763988_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=JRxBW_OPXR0AX-7BF8x&_nc_ht=scontent-lga3-2.xx&oh=00_AfD5PR9UzeOdfQaaPH--35ZA6vMxO-SS7RgWera5CvcwnQ&oe=63CCBCE1" />
-    <figcaption class="cap">Tom, Jay, Bill, Nick</figcaption>
-    <div>
-        
-    </div>
+  <main>
+<section id="downloading-games">
+  <h2>Downloading Games</h2>
+  <p>On your PS Vita, find the PKG application. Click on this application and then click "Start". This will load you into a screen with thousands of games for the PS Vita.</p>
+  <p>If you press the Triangle button, you can sort these games by title, region, name, size, and date. From this menu, you can also choose to show PSP games or PSX games (PlayStation One games made for PSP).</p>
+  <p>Click the Circle button on any game you would like to download, and then click "Install Game or Patch". Wait a few seconds and then click the prompt to begin the download. PS Vita games' progress will be viewable from the top right corner on the home screen. PSP and PSX games will show that they are downloading at the bottom of the PKGj app.</p>
+  <p>If you are downloading PS Vita games, you can close out of this application after you initially begin the download. You will need to keep the application open while downloading PSP and PSX games.</p>
+</section>
 
+<section id="emulators">
+  <h2>Emulators</h2>
 
-</figure>
-    <div id="grid">
-<h5>Team Stats</h5>
-    </div>
-    <table id="stats">
-        
-        <tbody>
-            <th>
-                
-            </th>
-            <tr>
-                <td>Tom</td>
-            </tr>
-            <tr>
-                <td>Jay
-                </td>
-            </tr>
-            <tr>
-                <td>Nick
-                </td>
-            </tr>
-            <tr>
-                <td>Bill
-                </td>
-            </tr>
-        </tbody>
+  <h3>mGBA</h3>
+  <p>mGBA is an emulator that works for Gameboy Advance and Gameboy Color games. When this application is clicked, it will open a file section where you can find GBA ROMs and GBC ROMs. The ROMs are located at <code>ux0:/data/mGBA/</code>. You can press the Square button to change the screen size and the Triangle button to access the menu. From the menu, you can create and load save states, as well as perform other actions and exit the game back to the games menu.</p>
 
+  <h3>CATSFC-libretro-vita</h3>
+  <p>CATSFC-libretro-vita is the application used for SNES emulation. When the application is first booted up, press the R button and then click the "ROMs" button. You can also press the R button again from the main screen to change controls, screen size, or make other tweaks. Click any game to boot it up. Pressing the R and L buttons together will bring you to a menu screen where you can create a save state, adjust options, and perform other actions.</p>
 
+  <h3>DaedalusX64</h3>
+  <p>DaedalusX64 is an N64 emulator. When you first boot up this application, you may need to wait for it to load for about 30 seconds. Once loaded, the left analog stick works as a cursor, similar to a computer. The L button works as a left click, and the R button works as a right click. You can scroll through the games using the D-pad. Clicking the filter button allows you to change the filter to "Playable," which displays all available games. Each game provides a description and information about its playability. While in a game, you can press the Select button to bring up the top option bar. Use the left analog stick to click on the "File" option with the L button. This is where you can create and load save states or close the ROM.</p>
 
-    </table>
+  <h3>GenesisPlusGXVITA</h3>
+  <p>GenesisPlusGXVITA is a Sega Genesis emulator. This application follows a similar pattern to the SNES emulator. Press the R button when the game is first booted up, and you will either be presented with the ROMs or need to click the "ROMs" button. Pressing the R and L buttons together brings up the menu, where you can create and load save states, adjust settings, and perform other actions.</p>
 
-    <div class="dnice">
-        <p class="denny">We came, We saw, We conquered. -<em>Denny</em> 
-        of House Tbird 
-        </p>
-            <embed src="https://media.tenor.com/kcpKqzMdJu4AAAAd/bowling-ball-
-            bowling-pin.gif" />
-    </div>
-    <button type="button" class="button6" ><a href="#home">Home</a></button>
+  <h3>PNES</h3>
+  <p>PNES is an NES emulator. When you open this application, it should show all available games listed on the left side. If the games are written in red, you need to press the Start button and change the "Show" option to "Available." While playing games, you can press the Select and Start buttons together to open the menu and access options such as creating and loading save states. At the bottom of the menu, you will find the "States" button to perform related actions.</p>
 
-        <h3 id="smile">Our Inspiration</h3>
-    <div>
-        <embed id="guy" src="https://ashbowl.com/wp-content/uploads/2017/12/dreamstimelarge_12169338-1.jpg"/>
-    </div>
-        <section>
-            <article>
-                <p>This is the man who started it all. He stayed in his
-                     lane every day of his life until this photo was taken.
-                      From the day this photo was taken, he would go on to 
-                      conquer the lanes of all his enemies.</p>
+  <h3>Adrenaline</h3>
+  <p>Adrenaline is a PSP emulator. To access PSP games, go to the Game tab and scroll to the bottom to click on "Memory Stick." After a few seconds, all the games downloaded from the PKGj application will be loaded into this folder. While in a game or the menu, you can hold the PS button to bring up Adrenaline's menu. Click on the Settings button at the top to access options, exit the PSPEmulation or Adrenaline, and more. Pressing the R button allows you to create or load save states.</p>
 
-                    <p><em style="color:rgb(225, 11, 11)">"You cannot make 
-                      peace with friends, only enemies." </em> - something he would 
-                      say on a daily basis.
-                </p>
-            </article>
-            
-        </section>
-        <button type="button" class="button6" ><a href="#home">Home</a></button>
+</section>
 
-    <div id="lanes">
-        <h6>Off The Lanes</h6>
-            <p style="font-size: 20px">When we're off the lanes, we spend our time on the catan board trading our souls
-                away for a wheat and an ore. A wise man once told me, <em style="color: red">"It is not the
-                 amount of sheep a man has, but the amount of sheep a man can carry."</em>
-                 He passed away shortly after from river fever. 
-            </p>
-            
-                <img id="catan" src="https://content.instructables.com/FYI/HETD/IAPAQWK6/FYIHETDIAPAQWK6.jpg?auto=webp&fit=bounds&frame=1&width=1024&auto=webp&frame=1&height=300">
+    <section id="vitadb-downloader">
+  <h3>VitaDB Downloader</h3>
+  <p>VitaDB Downloader is an application used for downloading homebrew games and applications. Note that most of these applications are fan-made games or ports. While browsing, you may find interesting applications or even games like Flappy Bird. Be aware that the Android games section will not work. Explore the available options and discover cool applications!</p>
 
-            
-    </div>  
-    <button type="button" class="button6" ><a href="#home">Home</a></button>
-  
-    <footer>
-        <h4 id="honor">Honorary Team Members</h4>
-        <ul>
-            <li>John Cassidy</li>
-            <li>John Morgan</li>
-            <li>Danny Wnukowski</li>
-            <li>Kev Leneghan <em>(Initiate In Training)</em></li>
-            <li>Pat Finley <em>(Team Sous Chef)</em></li>
-        </ul>
-            <img src="https://www.cookingschool.org/img/sous-chef.jpeg">
-            <button type="button" class="button6" ><a href="#home">Home</a></button>
+    </section>
 
+    <section id="vitashell">
+  <h3>VitaShell</h3>
+  <p>VitaShell is a file manager for the PS Vita. Pressing the Triangle button brings up the side menu, where you can copy or move files if needed. Pressing the Select button allows you to connect to a computer and add ROMs to the ROM folders if desired.</p>
 
+    </section>
+  </main>
 
-    </footer>
- 
+  <footer>
+    <p>&copy; 2023 Modded PS Vita User Guide. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
